@@ -1,0 +1,1 @@
+const solution = (array) => array.sort((a,b)=> b-a)[Math.floor(array.length/2)]
