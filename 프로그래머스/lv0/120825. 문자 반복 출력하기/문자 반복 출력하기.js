@@ -1,7 +1,1 @@
-function solution(str, n) {
-    let answer = '';
-    [...str].forEach(el=>{
-        answer += el.repeat(n)
-    })
-    return answer
-}
+const solution = (str, n) => [...str].map(el=> el.repeat(n)).join('')
