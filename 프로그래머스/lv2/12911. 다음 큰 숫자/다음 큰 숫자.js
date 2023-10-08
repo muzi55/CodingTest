@@ -1,12 +1,11 @@
 function solution(n) {
     let answer = 0;
     const 이진법 = n.toString(2)
-    const 일의갯수 = [...이진법].filter(el=>el!=='0').length
+    const 일의갯수 = [...이진법].filter(el=>el!=='0').length // 4
     
     for (let i = n+1; i < 1_000_000; i++){
-       if(i < n) continue;
-       const 다음큰수 = i.toString(2)
-       const 다음큰수일의갯수 = [...다음큰수].filter(el=>el!=='0').length
+       const 다음큰수 = i.toString(2) //79~~
+       const 다음큰수일의갯수 = [...다음큰수].filter(el=>el!=='0').length // 4 1 2 3 ...
        
        if(다음큰수일의갯수 === 일의갯수)return answer = i
     
