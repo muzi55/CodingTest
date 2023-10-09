@@ -1,0 +1,1 @@
+const solution = (arr, pat) => [...arr].map(el=> el === 'A' ? 'B' : 'A').join('').includes(pat) ? 1 : 0
