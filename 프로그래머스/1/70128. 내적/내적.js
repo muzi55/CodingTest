@@ -1,0 +1,1 @@
+const solution= (a, b) => a.reduce((acc, current, index)=>acc + (current*b[index]), 0)
